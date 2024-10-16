@@ -10,15 +10,15 @@ import {Footer} from "@/components/footer/Footer";
 export default function Home() {
   return (
     <>
-      <Nav />
+      <Nav/>
       <main>
         <Illustration/>
         <Services/>
         <Illustration_two/>
         <Testimonials/>
         <EarlyAccess/>
-        <Footer/>
       </main>
+        <Footer/>
     </>
   );
 }
