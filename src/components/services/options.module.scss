@@ -1,0 +1,56 @@
+.options {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10%;
+
+    .option {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+      align-items: center;
+      .options_imge {
+        
+      }
+      .option_header{
+        font-size: clamp(1.5rem, 2vw, 3rem);
+        font-weight: var(--font-weight);
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .optons_text {
+        font-size: clamp(0.8rem, 1.5vw, 2rem);
+        text-align: center;
+        width: 80%;
+        text-align: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .options {
+      flex-direction: column;
+      align-items: center;
+      padding: 5%;
+      .options_imge{
+        width:100px;
+        height:100px;
+      }
+      .option {
+        width: 100%;
+        .option_header {
+          font-size: clamp(1.5rem, 3vw, 4rem);
+          font-weight: var(--font-weight);
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        .optons_text {
+          font-size: clamp(0.8rem, 1.5vw, 2rem);
+          text-align: center;
+          width: 80%;
+          text-align: center;
+        }
+      }
+    }
+  }

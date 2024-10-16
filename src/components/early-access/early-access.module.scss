@@ -1,0 +1,63 @@
+.early_acces {
+  background-color: hsl(217, 28%, 15%);
+  height: fit-content;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 3% 0%;
+  padding-bottom: 3%;
+  position: relative;
+  bottom: -10vw;
+  z-index: 1;
+
+  .early_access_header {
+    text-align: center;
+    font-size: clamp(1.5rem, 3vw, 4rem);
+  }
+  .early_access_content {
+    text-align: center;
+    font-size: clamp(0.8rem, 1.3vw, 1.6rem);
+    max-width: 50%;
+    margin: 30px auto;
+  }
+  .early_access_form {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .early_access_input {
+      padding: 10px;
+      max-width: 40%;
+      border-radius: 20px;
+      border: none;
+      width: 50%;
+    }
+    .submit_btn {
+      background-color: var(--button-color);
+      color: var(--bg-color);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      font-weight: var(--font-weight);
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .early_acces {
+    bottom:-30vw;
+    .early_access_content {
+      max-width: 80%;
+    }
+    .early_access_form {
+      flex-direction: column;
+      gap: 10px;
+      .early_access_input {
+        width: 65%;
+        max-width: none;
+      }
+    }
+  }
+}

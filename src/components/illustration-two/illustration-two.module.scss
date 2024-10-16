@@ -1,0 +1,46 @@
+.illustration {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 50px 100px;
+    .content {
+      .illustration_two_header {
+        font-size: clamp(1.5rem, 3vw, 4rem);
+        font-weight: var(--font-weight);
+        margin-bottom: 20px;
+        text-align: start;
+      }
+      .illustration_two_text {
+        font-size: clamp(0.8rem, 1.5vw, 2rem);
+        text-align: start;
+      }
+
+      .illustration_two_link_container{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .illustration_two_link {
+          text-decoration: underline;
+          color: var(--button-color);
+          font-size: clamp(1rem, 1.5vw, 2rem);
+          font-weight: var(--font-weight);
+        }
+        .arrow {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .illustration {
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      .illustration_two_image{
+        width:250px;
+        height:250px;
+      }
+
+    }
+  }
